@@ -1,6 +1,6 @@
 {
   "name": "md-tweet-embed",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Convert Tweets to Markdown embeds",
   "main": "./md-tweet-embed.js",
   "bin": "./cli.js",
