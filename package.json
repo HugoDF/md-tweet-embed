@@ -1,16 +1,32 @@
 {
-  "private": true,
+  "name": "md-tweet-embed",
+  "version": "0.0.0",
+  "description": "Convert Tweets to Markdown embeds",
+  "main": "./md-tweet-embed.js",
+  "bin": "./cli.js",
+  "files": ["cli.js", "md-tweet-embed.js"],
   "scripts": {
+    "test": "uvu tests",
     "lint": "xo .",
-    "format": "xo . --fix"
+    "fmt": "xo . --fix",
+    "release": "np"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "turndown": "^7.0.0"
   },
   "devDependencies": {
-    "xo": "latest"
+    "np": "^6.5.0",
+    "uvu": "^0.3.4",
+    "xo": "^0.33.1"
   },
   "xo": {
     "prettier": true,
     "space": true,
     "globals": []
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }

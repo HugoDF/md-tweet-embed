@@ -1,3 +1,33 @@
+# md-tweet-embed
+
+Convert Tweets to Markdown embeds.
+
+## Installation
+
+```sh
+npm install --save md-tweet-embed
+# or
+yarn add md-tweet-embed
+```
+
+## Usage
+
+From a JavaScript file, run through Node.js
+
+```js
+const { mdTweetEmbed } = require('md-tweet-embed');
+mdTweetEmbed(['https://twitter.com/hugo__df/status/xxxxx'])
+.then(([markdownEmbed]) => {
+  console.log(markdownEmbed);
+});
+```
+
+As a CLI:
+
+```sh
+npx md-tweet-embed https://twitter.com/hugo__df/status/xxxxx
+```
+
 ## Requirements
 
 - Node 10

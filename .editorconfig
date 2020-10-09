@@ -16,3 +16,5 @@ insert_final_newline = ignore
 [*.md]
 trim_trailing_whitespace = false
 
+[tests/*.js]
+trim_trailing_whitespace = false
