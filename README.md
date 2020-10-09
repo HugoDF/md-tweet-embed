@@ -16,16 +16,36 @@ From a JavaScript file, run through Node.js
 
 ```js
 const { mdTweetEmbed } = require('md-tweet-embed');
-mdTweetEmbed(['https://twitter.com/hugo__df/status/xxxxx'])
+mdTweetEmbed(['https://twitter.com/hugo__df/status/1314635351928041472'])
 .then(([markdownEmbed]) => {
   console.log(markdownEmbed);
+  // > md-tweet-embed: an npm module/CLI that takes tweet URLs and turns them to markdown
+  // >
+  // > CLI: npx md-tweet-embed <your-twitter-urls>
+  // >
+  // > From JS:
+  // >
+  // > const {mdTweetEmbed} = require('md-tweet-embed');
+  // > mdTweetEmbed(['twitter-url']).then(([embed]) => {}); [pic.twitter.com/2A7hCismd1](https://t.co/2A7hCismd1)
+  // >
+  // > — Hugo (@hugo\_\_df) [October 9, 2020](https://twitter.com/hugo__df/status/1314635351928041472?ref_src=twsrc%5Etfw)
 });
 ```
 
 As a CLI:
 
 ```sh
-npx md-tweet-embed https://twitter.com/hugo__df/status/xxxxx
+npx md-tweet-embed https://twitter.com/hugo__df/status/1314635351928041472
+> md-tweet-embed: an npm module/CLI that takes tweet URLs and turns them to markdown
+>
+> CLI: npx md-tweet-embed <your-twitter-urls>
+>
+> From JS:
+>
+> const {mdTweetEmbed} = require('md-tweet-embed');
+> mdTweetEmbed(['twitter-url']).then(([embed]) => {}); [pic.twitter.com/2A7hCismd1](https://t.co/2A7hCismd1)
+>
+> — Hugo (@hugo\_\_df) [October 9, 2020](https://twitter.com/hugo__df/status/1314635351928041472?ref_src=twsrc%5Etfw)
 ```
 
 ## Requirements
