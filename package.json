@@ -21,7 +21,7 @@
   "devDependencies": {
     "np": "^6.5.0",
     "uvu": "^0.3.4",
-    "xo": "^0.33.1"
+    "xo": "^0.34.1"
   },
   "xo": {
     "prettier": true,
