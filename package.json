@@ -10,18 +10,15 @@
     "md-tweet-embed.js"
   ],
   "engines": {
-    "node": ">18"
+    "node": ">=18"
   },
   "scripts": {
-    "test": "uvu tests",
+    "test": "node tests",
     "fmt": "npx xo --prettier --space --fix",
     "release": "npx np"
   },
   "dependencies": {
     "turndown": "^7.0.0"
-  },
-  "devDependencies": {
-    "uvu": "^0.5.1"
   },
   "xo": {
     "globals": ["fetch"]
