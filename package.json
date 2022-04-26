@@ -9,6 +9,9 @@
     "cli.js",
     "md-tweet-embed.js"
   ],
+  "engines": {
+    "node": ">18"
+  },
   "scripts": {
     "test": "uvu tests",
     "fmt": "npx xo --prettier --space --fix",
