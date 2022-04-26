@@ -15,7 +15,7 @@ yarn add md-tweet-embed
 From a JavaScript file, run through Node.js
 
 ```js
-const { mdTweetEmbed } = require('md-tweet-embed');
+import { mdTweetEmbed } from 'md-tweet-embed';
 mdTweetEmbed(['https://twitter.com/hugo__df/status/1314635351928041472'])
 .then(([markdownEmbed]) => {
   console.log(markdownEmbed);
@@ -50,20 +50,20 @@ npx md-tweet-embed https://twitter.com/hugo__df/status/1314635351928041472
 
 ## Requirements
 
-- Node 10
-- Yarn 1.x or npm
+- Node 18
+- npm v8
 
 ## Setup
 
 1. Clone the repository
-2. Run `yarn` or `npm install` installs all required dependencies.
+2. Run `npm install` installs all required dependencies.
 
 ## npm scripts
 
 > Equivalent `npm run <script>` should also work
 
-- `yarn lint` will lint all of the files with [xo](https://github.com/xojs/xo)
-- `yarn format` will run lint with `--fix` option on all the examples files (and tests).
+- `npm run test` will run all tests (written with uvu).
+- `npm run fmt` will run lint with `--fix` option on all the examples files (and tests).
 
 ## LICENSE
 

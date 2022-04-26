@@ -1,12 +1,14 @@
 #!/usr/bin/env node
-const {mdTweetEmbed} = require('./md-tweet-embed');
+import process from 'node:process';
+import {mdTweetEmbed} from './md-tweet-embed.js';
 /**
  *
  * @param {Array<string>} urls
  * @returns {Promise<void>}
  */
 async function main(urls) {
-  console.log((await mdTweetEmbed(urls)).join('\n-----\n'));
+  const tweetEmbeds = await mdTweetEmbed(urls);
+  console.log(tweetEmbeds.join('\n-----\n'));
 }
 
 main(process.argv.slice(2));

@@ -1,6 +1,6 @@
 // @ts-check
-const fetch = require('node-fetch');
-const Turndown = require('turndown');
+import Turndown from 'turndown';
+
 const turndown = new Turndown();
 
 /**
@@ -15,7 +15,7 @@ const getEmbedUrl = (tweetUrl) =>
  * @param {Array<string>} urls
  * @return {Promise<Array<string>>}
  */
-function mdTweetEmbed(urls) {
+export function mdTweetEmbed(urls) {
   return Promise.all(
     urls.map(async (url) => {
       if (
@@ -31,10 +31,10 @@ function mdTweetEmbed(urls) {
       // @ts-ignore
       const embedResponse = await fetch(getEmbedUrl(url)).then((r) => r.json());
       return turndown.turndown(embedResponse.html);
-    })
+    }),
   );
 }
 
-module.exports = {
-  mdTweetEmbed
+export default {
+  mdTweetEmbed,
 };

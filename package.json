@@ -3,30 +3,22 @@
   "version": "0.2.0",
   "description": "Convert Tweets to Markdown embeds",
   "main": "./md-tweet-embed.js",
+  "type": "module",
   "bin": "./cli.js",
   "files": [
     "cli.js",
     "md-tweet-embed.js"
   ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "test": "uvu tests",
-    "lint": "xo .",
-    "fmt": "xo . --fix",
-    "release": "np"
+    "test": "node tests",
+    "fmt": "npx xo --prettier --space --global=fetch --fix",
+    "release": "npx np"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1",
     "turndown": "^7.0.0"
-  },
-  "devDependencies": {
-    "np": "^7.0.0",
-    "uvu": "^0.5.1",
-    "xo": "^0.39.1"
-  },
-  "xo": {
-    "prettier": true,
-    "space": true,
-    "globals": []
   },
   "license": "MIT",
   "publishConfig": {
