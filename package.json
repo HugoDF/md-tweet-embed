@@ -14,14 +14,11 @@
   },
   "scripts": {
     "test": "node tests",
-    "fmt": "npx xo --prettier --space --fix",
+    "fmt": "npx xo --prettier --space --global=fetch --fix",
     "release": "npx np"
   },
   "dependencies": {
     "turndown": "^7.0.0"
-  },
-  "xo": {
-    "globals": ["fetch"]
   },
   "license": "MIT",
   "publishConfig": {

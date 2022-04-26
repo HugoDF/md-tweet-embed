@@ -1,4 +1,4 @@
-export default [
+const fixtureTweetsToMarkdown = [
   {
     url: 'https://twitter.com/hugo__df/status/1314627311921225728',
     markdown: `> Your weekly email dose of [#AlpineJS](https://twitter.com/hashtag/AlpineJS?src=hash&ref_src=twsrc%5Etfw) Content has just gone out: "Is Alpine.js still a secret to the JS community?" [https://t.co/2d5Cir6gX7](https://t.co/2d5Cir6gX7)
@@ -12,3 +12,5 @@ export default [
 > — Hugo (@hugo\\_\\_df) [October 9, 2020](https://twitter.com/hugo__df/status/1314551453885882371?ref_src=twsrc%5Etfw)`,
   },
 ];
+
+export default fixtureTweetsToMarkdown;
