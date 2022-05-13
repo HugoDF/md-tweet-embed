@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import process from 'node:process';
-import {mdTweetEmbed} from './md-tweet-embed.js';
+import { mdTweetEmbed } from './md-tweet-embed.js';
 /**
  *
  * @param {Array<string>} urls

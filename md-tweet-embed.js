@@ -31,7 +31,7 @@ export function mdTweetEmbed(urls) {
       // @ts-ignore
       const embedResponse = await fetch(getEmbedUrl(url)).then((r) => r.json());
       return turndown.turndown(embedResponse.html);
-    }),
+    })
   );
 }
 
